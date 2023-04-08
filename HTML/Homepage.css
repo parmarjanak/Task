@@ -1,0 +1,184 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+
+
+}
+.trt
+{  height: 15px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;  
+    background-color: white;
+    margin-top:auto;
+    padding: 85px;
+    background: url(https://www.thegef.org/sites/default/files/styles/banner_image/public/2022-03/forests-1440x655.jpg?h=4e9a1ef8&itok=qJO-1eeD);
+    width: 1500px;
+}
+
+h1 .yu
+{
+    color:lightgreen;
+}
+
+.background {
+    background: url(https://images.pexels.com/photos/1287075/pexels-photo-1287075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    background-color: transparent;
+    margin: 50px 100px;
+    position: absolute;
+ 
+}
+
+nav .box {
+    display: flex;
+
+    
+}
+
+nav .jap {
+    height: 30px;
+    list-style: none;
+    font-size: 25px;
+    position: relative;
+    width: 130px;
+    text-align: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+nav .jap::after {
+    content: "";
+    height: 3px;
+    width: 0px;
+    background-color: rgb(61, 107, 72);
+    position: absolute;
+    top: 32px;
+    transition: 1s;
+    left:15px;
+    align-items: center;
+}
+
+nav .jap:hover::after {
+    width: 100px;
+}
+
+nav .jap a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.toolkit {
+    padding: 25px 0px;
+    background-color: white;
+    height: 335px;
+    width: 665px;
+    display: flex;
+    position: absolute;
+    top: 125%;
+    left: 0;
+    visibility: hidden;
+}
+
+.womens:hover .toolkit {
+    cursor: pointer;
+    visibility: visible;
+}
+
+
+.baseui {
+    list-style: none;
+}
+
+.baseui li a {
+    color: black;
+}
+
+.baseui li a:hover {
+    color: #A0D995;
+}
+
+.first {
+    text-align: left;
+    font-size: 16px;
+    width: 25%;
+    line-height: 40px;
+}
+
+.second {
+    text-align: left;
+    font-size: 16px;
+    width: 25%;
+    line-height: 40px;
+}
+
+.third {
+    height: 285px;
+    width: 305px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px #73A9AD;
+}
+
+.contant {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.heading1 {
+    font-size: 46px;
+    letter-spacing: 14px;
+}
+
+.heading1 span .rt {
+    color:#1A4314 ;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.heading1 span {
+    color:black;
+    font-weight: bold;
+}
+
+.heading2 {
+    font-size: 25px;
+    color: #DAE2B6;
+    letter-spacing: 12px;
+    font-weight: bold;
+    margin: 25px;
+}
+
+.btn {
+    color: #fff;
+    letter-spacing: 3px;
+    padding: 10px 32px;
+    background: #A1C298;
+    font-weight: bold;
+    outline: 8px solid transparent ;
+    transition: .5s;
+    border: none;
+   
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    outline: 8px solid;
+    color: green;
+}
