@@ -1,0 +1,95 @@
+body
+        {
+            background-color: black ;
+        }
+
+        .main
+        {
+            text-align: center;
+            position: relative;
+            background-color:crimson;
+            padding: 20px 0;
+            border-radius: 25px;
+          }
+
+        .main .card
+        {
+            display: inline;
+            list-style: none;
+            padding: 20px 30px;
+            font-size: 20px;
+            border-radius: 25px;
+        }
+
+        .main .card a
+        {
+            text-decoration: none;
+            color: white;
+         
+        }
+
+        .main .card .box
+        {
+            position: absolute;
+            top: 100%;
+            left:28%;
+            visibility: hidden;
+            height: 400px;
+            width: 600px;
+            background-color:crimson;
+            padding: 10px;
+            box-shadow: 1px 2px  15px white;
+            
+        }
+
+        .main .card .box .gog
+        {
+            height: 300px;
+            width: 150px;
+        }
+
+        .main .card .box .gog ul li .svp
+        {
+            height: 420px;
+            width: 400px;
+            background-color:crimson;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+        }
+
+        .main .card .box .gog ul li .svp .zst
+        {
+            width: 200px;
+            height: 350px;
+            border: 2px solid black;
+            background-color: white;
+            margin: 10px;
+            border-radius: 25px;
+            box-shadow: 1px 5px  15px white;        
+        }
+
+        .main .card .box .gog ul li .svp .v
+        {
+            background-color: white;
+        }
+         .main .card .box .gog ul li:hover .svp
+        {
+            visibility: visible;
+        }
+         .main .card .box li
+        {
+            padding: 10px ;
+         }
+        .main .card:hover .box
+         {
+            visibility: visible;
+         }
+        .main .card:hover
+         {
+            background-color:black;
+         }
