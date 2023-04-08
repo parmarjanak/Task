@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Animation</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2824/2824779.png">
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(255deg, rgba(63,94,251,1) 0%, rgba(139,17,41,1) 100%);
+            background-attachment: fixed;
+            height: 30vh;
+            scroll-behavior: smooth;
+        }
+
+        .eye
+        {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        .left
+        {
+            height:200px;
+            width: 160px;
+            border-radius: 75%;
+            background: whitesmoke;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .right
+        {
+            height:200px;
+            width: 160px;
+            border-radius: 75%;
+            background: white;
+            position: relative;
+            overflow: hidden;
+            margin: 30px;
+        }
+
+        .iris
+        {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background: black;
+            top: 50%;
+            left:10%;
+            position:absolute;
+            animation: iris 3s infinite;
+        }
+
+        .pupil
+        {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background: white;
+            position: relative;
+            top: 20%;
+            left:  20%;
+        }
+
+        .shutter
+        {
+            position: absolute;
+            width: 100%;
+            height: 30%;
+            background: cornflowerblue;
+            border-radius: 50%;
+            animation: shutter 3s infinite;
+        }
+
+        @keyframes iris
+        {
+            20% {transform: rotate(20deg) translateX(70px);}
+
+            20% {transform: rotate(-100deg) translateX(0px);}
+
+            40% {transform: translateX(70px);}
+        }
+
+        @keyframes shutter
+        {
+            0%{height: 0px;}
+            50%{height: 50px;}
+            75%{height: 100%;}
+        }
+        h1
+        {
+            text-align: center;
+            line-height:300px;
+            color: white;
+            letter-spacing: 5px;       
+        }
+        
+        h1::first-letter
+        {
+            color: red;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- first eye -->
+                      <h1>EYE ANIMATION</h1>
+<div class="eye">
+
+            <div class="left">
+
+                <div class="iris"> 
+
+                    <div class="pupil"></div>
+
+                </div>
+
+                <div class="shutter"></div>
+
+            </div>
+
+ <!-- second eye -->
+
+                <div class="right">
+
+                    <div class="iris">
+
+                        <div class="pupil"></div>
+                       
+                    </div>
+
+                    <div class="shutter"></div>
+
+            </div>
+</div> 
+</body>
+</html>
