@@ -1,0 +1,144 @@
+*{box-sizing: border-box;}
+.main 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 35px ;
+    top:-4px;
+    position: relative;
+    align-items: center;
+}
+h1
+{
+    width: 100%;
+    text-align: center;
+    color: lightgreen;
+    background-color:black;
+    line-height: 100px;    
+}
+span .yt
+{
+    color: white;
+    font-size: 45px;
+}
+.new
+{
+    font-weight: bold;
+    color:  white;
+}
+.card 
+{
+    height: 420px;
+    width: 250px;
+    background: white;
+    box-shadow: 0 0 5px #000;
+    margin: 10px;
+}
+.card .prd-img
+{
+    height: 250px;
+    width: 100px;
+    background: white;
+    position: relative;
+}
+.font
+{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+.back
+{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotateY(0deg);
+    transition: 1s;
+}
+
+.prd-img:hover .back 
+{
+    transform: rotateY(180deg);
+}
+.prd-img:hover .font
+{
+    transform: rotateY(0deg);
+}
+.card .prd-view
+{
+    height: 50px;
+    width: 250px;
+    background: black;
+    position: absolute;
+    top:0;
+    left:0; 
+    opacity: 0;
+    transition: 1s;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+}
+.card .prd-info
+{
+    height: 100px;
+    width: 250px;
+    background: white; 
+}
+.prd-img:hover .prd-view
+{
+    top:200px;
+    opacity: 1;
+}
+.new1
+{
+    position: absolute  ;
+    left: 210px;
+    top: 0;
+    color: #ffffff;
+    border: 2px solid  #fc636b;
+    background-color: #fc636b;
+}
+.card-Info h2
+{
+    color:#fc636b;
+    text-align: center;
+    font-size: 20px;   
+}
+p
+{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+span
+{
+    font-weight: bold;
+    margin: 10px;
+    color: gray;
+}
+.shopnow
+{
+    height: 40px;
+    width: 200px;
+    background:#354259;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    outline: 8px ;
+    color: white;
+}
+.shopnow:hover
+{
+    outline: 8px solid ;
+}
