@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color:lightgray;
+        }
+
+        .main 
+        {
+            height: 300px;
+            width: 500px;
+            background: url(https://augustav.com/images/bot_2.jpg);
+            background-size: 100% 100%;
+            margin:200px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide1
+        {
+            height: 300px;
+            width: 500px;
+            background: rgba(0,0,0,.20);
+            position: absolute;
+            top:-100%;
+            left:100%;
+            transition: .50s;
+        }
+
+        .slide2 
+        {
+            height: 300px;
+            width: 500px;
+            background: rgba(0,0,0,.20);
+            position: absolute;
+            top:100%;
+            left:-100%;
+            transition: .50s;  
+        }
+
+        .z
+        {
+            position: absolute;
+            top: 45%;
+            left: 20%;
+            font-weight: bold;
+            font-size: 35px;
+            color: white;
+            letter-spacing: 8px;
+        }
+
+        span{
+            color: aqua;
+        }
+
+        .main:hover .slide1
+        {
+            transform: translate(-100% , 100%);
+        }
+
+        .main:hover .slide2
+        {
+            transform: translate(100%,-100%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main"> 
+        <div class="z">Flat <span>50%</span> Offer</div>
+        <div class="slide1"></div>
+        <div class="slide2"></div>
+    </div>
+
+</body>
+</html>
