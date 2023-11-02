@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border_Hover</title>
+    <style>
+        body
+        {background: black;}
+        .x
+        {
+            height: 600px;
+            width: 600px;
+            background: transparent;
+            position: relative;
+            margin: 100px auto;
+            overflow: hidden;
+            border-radius: 25px;
+            
+
+        }
+        .y
+        {
+            height:1100px;
+            width: 1100px;
+            background: linear-gradient(red,blue,green,white,crimson,lightblue,coral,aqua,chocolate,cornflowerblue,
+            hotpink,slateblue,tomato,lawngreen
+            );
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            transform: rotate(-360deg);
+            transition: 2s;
+            color: lawngreen;
+            border-radius: 25px;
+         
+        }
+        .j
+        {
+            height: 550px;
+            width: 550px;
+          background: url(https://img.freepik.com/free-photo/sunrise-vasco-da-gama-bridge-lisbon-portugal_268835-1338.jpg?w=826&t=st=1681794967~exp=1681795567~hmac=119c286cfe21f4d5cab87663844abecdf9ed06789a70a50eb410c6fb7335dada);
+          background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            top:50%;
+            left: 50%;
+        transform: translate(-50% , -50%);
+        border-radius: 25px;
+          
+        }
+        .x:hover .y
+        {
+            transform: rotate(360deg);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="y"></div>
+        <div class="j"></div>
+    </div>
+</body>
+</html>
