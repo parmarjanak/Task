@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border_Be_Af</title>
+    <style>
+        body
+        {
+            background: black;
+        }
+        .x
+        {
+            height: 600px;
+            width: 600px;
+            background: green;
+            position: relative;
+            margin: 100px auto;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        .x::before
+        {
+            content: "";
+            height: 1100px;
+            width: 1100px;
+           
+            background-attachment: fixed;
+            background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(38,12,195,1) 0%, rgba(253,187,45,1) 100%);
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            transition: 1s;
+            animation: test 1s infinite;
+
+        }
+        .x::after
+        {
+            content: "";
+            height: 540px;
+            width: 540px;
+            background:url(https://img.freepik.com/free-photo/closeup-shot-green-plant-branch-with-blurred-dark_181624-2716.jpg?w=360&t=st=1681796970~exp=1681797570~hmac=1c5ea3efc4448ac0d70893769a2155267b33d593222ffe70535331d9315b7127);
+           background-size:100%  100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+       @keyframes test
+       {
+        form{transform: rotate(-360deg);}
+        to{transform: rotate(360deg);}
+       }
+    </style>
+</head>
+<body>
+    <div class="x">
+        
+    </div>
+</body>
+</html>
